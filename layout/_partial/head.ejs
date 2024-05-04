@@ -77,4 +77,12 @@
 		</script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
 	<% } %>
+  <% if (theme.canonical_URL){ %>
+    <!-- canonical url -->    
+    <% if (page.permalink) { %>
+      <link rel="canonical" href="<%= page.permalink %>" />
+    <% } else{ %>  
+      <link rel="canonical" href="<%= url %>" />
+    <% } %>
+  <% } %>
 </head>

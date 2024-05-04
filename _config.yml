@@ -158,6 +158,8 @@ open_graph:
   twitter_id:
   google_plus:
 
+# specify canonical URL
+canonical_URL: true
 
 ##############################################################################
 # Plugins
